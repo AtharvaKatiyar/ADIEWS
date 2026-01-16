@@ -1,0 +1,74 @@
+
+LAYER 1: INVISIBLE MIGRATION RADAR - SUMMARY REPORT
+Generated: 2026-01-15 14:29:07
+================================================================================
+
+DATASET OVERVIEW
+- Total Districts Analyzed: 1056
+- Date Range: 2025-03 to 2026-01
+- Total Months: 10
+
+VOLATILITY ANALYSIS
+- Mean Adult Update Volatility: 3,881
+- Median Volatility: 1,865
+- High Volatility Districts (σ > 5000): 274 (25.9%)
+- Maximum Volatility: 47,202 (Solapur, Maharashtra)
+
+GROWTH RATE PATTERNS
+- Mean Growth Rate: 66.57%
+- High Growth Districts (>20%): 383
+- Declining Districts (<-20%): 73
+- Fastest Growing: Khairthal-Tijara, Rajasthan (16378.2%)
+- Fastest Declining: Medchal?Malkajgiri, Telangana (-66.5%)
+
+SEASONAL MIGRATION
+- Mean Spike Amplitude: 5.12x
+- High Seasonal Districts (>5x): 255
+- Highest Seasonality: Medchal?Malkajgiri, Telangana (298.7x)
+
+MIGRATION PRESSURE
+- Mean Pressure Score: 485
+- High Pressure Districts (>10K): 6
+- Highest Pressure: Khairthal-Tijara, Rajasthan (134,681)
+
+MIGRATION PATTERN DISTRIBUTION
+migration_pattern
+Seasonal Migration    597
+Stable Population     185
+High In-Migration     162
+High Churn             92
+High Out-Migration     20
+
+HIGH-CHURN DISTRICTS (Priority Intervention Zones)
+- Total Identified: 87
+- Criteria: Top 20% Volatility + Top 20% Pressure
+
+TOP 10 HIGH-PRESSURE DISTRICTS:
+1. Khairthal-Tijara, Rajasthan: Pressure=134,681, σ=446, Growth=16378.2%, Pattern=Seasonal Migration
+2. Balotra, Rajasthan: Pressure=117,181, σ=242, Growth=8480.0%, Pattern=Seasonal Migration
+3. Beawar, Rajasthan: Pressure=38,605, σ=285, Growth=2946.2%, Pattern=Seasonal Migration
+4. Kotputli-Behror, Rajasthan: Pressure=37,711, σ=275, Growth=3398.0%, Pattern=Seasonal Migration
+5. Didwana-Kuchaman, Rajasthan: Pressure=25,526, σ=344, Growth=2852.8%, Pattern=Seasonal Migration
+6. Phalodi, Rajasthan: Pressure=21,943, σ=112, Growth=2447.4%, Pattern=Seasonal Migration
+7. Ahilyanagar, Maharashtra: Pressure=9,775, σ=1,309, Growth=1088.5%, Pattern=Seasonal Migration
+8. Yavatmal, Maharashtra: Pressure=9,320, σ=43,215, Growth=176.4%, Pattern=High In-Migration
+9. Medchal?Malkajgiri, Telangana: Pressure=8,577, σ=97, Growth=-66.5%, Pattern=Seasonal Migration
+10. North 24 Parganas, West Bengal: Pressure=7,786, σ=28,629, Growth=985.1%, Pattern=High In-Migration
+
+================================================================================
+VISUALIZATIONS GENERATED:
+1. layer1_volatility_analysis.png - Volatility distributions and patterns
+2. layer1_growth_rate_analysis.png - Growth rate patterns and trends
+3. layer1_seasonal_patterns.png - Seasonal migration indicators
+4. layer1_migration_pressure.png - Composite pressure scores
+5. layer1_high_churn_identification.png - Priority intervention zones
+
+DATA OUTPUTS:
+1. layer1_migration_metrics.csv - Complete metrics for all districts
+2. layer1_high_churn_districts.csv - Priority districts list
+
+================================================================================
+NEXT STEPS:
+- Validate findings with external migration data
+- Cross-reference with economic indicators
+- Proceed to Layer 2: Child Documentation Risk Map

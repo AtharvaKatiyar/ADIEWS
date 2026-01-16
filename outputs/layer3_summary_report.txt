@@ -1,0 +1,132 @@
+================================================================================
+LAYER 3: SYSTEM INTELLIGENCE ANALYSIS REPORT
+DSI (Demographic Stability Index) & ADP (Aadhaar Dependency Proxy)
+================================================================================
+Generated: 2026-01-15 20:00:15
+Total Districts Analyzed: 1,056
+
+--------------------------------------------------------------------------------
+1. DEMOGRAPHIC STABILITY INDEX (DSI) SUMMARY
+--------------------------------------------------------------------------------
+Mean DSI: 68.19
+Median DSI: 69.81
+Std Dev: 11.01
+Min DSI: 8.28 | Max DSI: 96.11
+
+DSI Classification Distribution:
+  Very Low    :    3 districts ( 0.28%)
+  Low         :   28 districts ( 2.65%)
+  Moderate    :  159 districts (15.06%)
+  High        :  796 districts (75.38%)
+  Very High   :   70 districts ( 6.63%)
+
+Top 10 Most Stable Districts (Highest DSI):
+  Kalahandi                      (Orissa              ): DSI = 96.11
+  Raebareli                      (Uttar Pradesh       ): DSI = 94.19
+  Hooghiy                        (West Bengal         ): DSI = 91.91
+  Doda                           (Jammu & Kashmir     ): DSI = 91.88
+  100000                         (100000              ): DSI = 90.02
+  561203                         (561203              ): DSI = 90.02
+  5Th Cross                      (Puttenahalli        ): DSI = 90.02
+  Almora                         (Uttaranchal         ): DSI = 90.02
+  Bageshwar                      (Uttaranchal         ): DSI = 90.02
+  Balianta                       (Odisha              ): DSI = 90.02
+
+--------------------------------------------------------------------------------
+2. AADHAAR DEPENDENCY PROXY (ADP) SUMMARY
+--------------------------------------------------------------------------------
+Mean ADP: 36.04
+Median ADP: 34.23
+Std Dev: 9.63
+Min ADP: 5.09 | Max ADP: 80.52
+
+ADP Classification Distribution:
+  Very Low    :   15 districts ( 1.42%)
+  Low         :  771 districts (73.01%)
+  Moderate    :  240 districts (22.73%)
+  High        :   29 districts ( 2.75%)
+  Very High   :    1 districts ( 0.09%)
+
+Top 10 Highest Dependency Districts (Highest ADP):
+  East Champaran                 (Bihar               ): ADP = 80.52
+  Patna                          (Bihar               ): ADP = 78.24
+  Nadia                          (West Bengal         ): ADP = 74.53
+  South 24 Parganas              (West Bengal         ): ADP = 73.99
+  Muzaffarpur                    (Bihar               ): ADP = 71.90
+  Samastipur                     (Bihar               ): ADP = 71.01
+  Murshidabad                    (West Bengal         ): ADP = 70.67
+  North 24 Parganas              (West Bengal         ): ADP = 70.03
+  Thane                          (Maharashtra         ): ADP = 69.93
+  Pune                           (Maharashtra         ): ADP = 69.69
+
+--------------------------------------------------------------------------------
+3. INTEGRATED SYSTEM INTELLIGENCE ANALYSIS
+--------------------------------------------------------------------------------
+Quadrant Distribution:
+  Q4: High Stability, Low Dependency      :  873 districts (82.67%)
+  Q1: High Stability, High Dependency     :  118 districts (11.17%)
+  Q3: Low Stability, Low Dependency       :   62 districts ( 5.87%)
+  Q2: Low Stability, High Dependency      :    3 districts ( 0.28%)
+
+--------------------------------------------------------------------------------
+4. CRITICAL ZONES ANALYSIS (ADP >= 60 and DSI < 40)
+--------------------------------------------------------------------------------
+Total Critical Zone Districts: 0 (0.00% of total)
+
+No districts identified in critical zones.
+
+--------------------------------------------------------------------------------
+5. STATE-LEVEL AGGREGATION (Top 15 by District Count)
+--------------------------------------------------------------------------------
+State                           Districts    Avg DSI    Avg ADP
+-----------------------------------------------------------------
+Uttar Pradesh                          89      68.21      45.55
+Madhya Pradesh                         60      69.83      33.31
+Karnataka                              53      71.60      33.36
+Maharashtra                            53      47.40      34.88
+West Bengal                            47      67.54      42.70
+Bihar                                  47      72.70      50.30
+Tamil Nadu                             46      67.24      37.17
+Rajasthan                              45      51.93      27.67
+Andhra Pradesh                         45      66.76      32.82
+Telangana                              41      67.90      34.57
+Odisha                                 41      75.93      38.11
+Gujarat                                39      65.68      33.90
+Chhattisgarh                           39      64.69      33.00
+Assam                                  37      70.88      34.05
+Orissa                                 36      74.64      33.63
+
+--------------------------------------------------------------------------------
+6. METHODOLOGY
+--------------------------------------------------------------------------------
+DSI Calculation:
+  DSI = (0.6 * (1 - normalized_CV) + 0.4 * (1 - normalized_deviation)) * 100
+  - Higher DSI = More demographic stability
+  - Based on coefficient of variation and rolling 3-month deviation
+
+ADP Calculation:
+  ADP = 0.50 * baseline_score + 0.30 * consistency_score + 0.20 * persistence_score
+  - Higher ADP = Greater Aadhaar system dependency
+  - Baseline: normalized mean adult updates
+  - Consistency: inverse of coefficient of variation
+  - Persistence: % of months above mean
+
+--------------------------------------------------------------------------------
+7. OUTPUT FILES GENERATED
+--------------------------------------------------------------------------------
+Visualizations:
+  - layer3_dsi_analysis.png (4 panels)
+  - layer3_adp_analysis.png (4 panels)
+  - layer3_integrated_analysis.png (4 panels)
+  - layer3_matrix_analysis.png (2 panels)
+
+Data Exports:
+  - layer3_system_intelligence.csv (all districts)
+  - layer3_critical_zones.csv (critical districts)
+
+Reports:
+  - layer3_summary_report.txt (this file)
+
+================================================================================
+END OF REPORT
+================================================================================

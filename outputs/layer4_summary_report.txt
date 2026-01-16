@@ -1,0 +1,140 @@
+================================================================================
+LAYER 4: EARLY WARNING SYSTEM - SUMMARY REPORT
+Rule-Based Alert Framework
+================================================================================
+Generated: 2026-01-15 21:10:16
+Total Districts Analyzed: 1,056
+
+--------------------------------------------------------------------------------
+1. ALERT SEVERITY DISTRIBUTION
+--------------------------------------------------------------------------------
+  CRITICAL     :   10 districts (  0.9%)
+  HIGH         :   93 districts (  8.8%)
+  MODERATE     :  314 districts ( 29.7%)
+  LOW          :  139 districts ( 13.2%)
+  NORMAL       :  500 districts ( 47.3%)
+
+--------------------------------------------------------------------------------
+2. PRIORITY INTERVENTION DISTRICTS
+--------------------------------------------------------------------------------
+  Critical Priority : 10 districts (immediate action required)
+  High Priority     : 93 districts (urgent intervention needed)
+  Moderate Priority : 314 districts (enhanced monitoring)
+  Total Intervention: 417 districts
+
+--------------------------------------------------------------------------------
+3. TOP 10 ALERT TYPES
+--------------------------------------------------------------------------------
+  migration_volatility_high       274 districts ( 25.9%)
+  child_share_low                 206 districts ( 19.5%)
+  growth_spike                     98 districts (  9.3%)
+  decline_rapid                    73 districts (  6.9%)
+  documentation_lag                51 districts (  4.8%)
+  stability_low                    31 districts (  2.9%)
+  dependency_high                  30 districts (  2.8%)
+  child_risk_high                   9 districts (  0.9%)
+  migration_pressure_critical       6 districts (  0.6%)
+  critical_zone                     3 districts (  0.3%)
+
+--------------------------------------------------------------------------------
+4. TOP 15 PRIORITY DISTRICTS (IMMEDIATE INTERVENTION)
+--------------------------------------------------------------------------------
+
+ 1. Balotra, Rajasthan
+    Severity: CRITICAL | Priority Score: 100.0 | Alerts: 3
+    Migration Pressure: 117181 | Child Risk: 24.0
+    DSI: 34.9 | ADP: 21.0 | Quadrant: Q3: Low Stability, Low Dependency
+
+ 2. Beawar, Rajasthan
+    Severity: CRITICAL | Priority Score: 100.0 | Alerts: 4
+    Migration Pressure: 38605 | Child Risk: 22.7
+    DSI: 32.7 | ADP: 20.5 | Quadrant: Q3: Low Stability, Low Dependency
+
+ 3. Khairthal-Tijara, Rajasthan
+    Severity: CRITICAL | Priority Score: 100.0 | Alerts: 3
+    Migration Pressure: 134681 | Child Risk: 21.4
+    DSI: 37.5 | ADP: 22.0 | Quadrant: Q3: Low Stability, Low Dependency
+
+ 4. Washim *, Maharashtra
+    Severity: CRITICAL | Priority Score: 96.6 | Alerts: 5
+    Migration Pressure: 617 | Child Risk: 50.9
+    DSI: 22.2 | ADP: 12.7 | Quadrant: Q3: Low Stability, Low Dependency
+
+ 5. Kotputli-Behror, Rajasthan
+    Severity: CRITICAL | Priority Score: 95.8 | Alerts: 3
+    Migration Pressure: 37711 | Child Risk: 21.0
+    DSI: 36.9 | ADP: 21.6 | Quadrant: Q3: Low Stability, Low Dependency
+
+ 6. Buldana, Maharashtra
+    Severity: CRITICAL | Priority Score: 87.1 | Alerts: 5
+    Migration Pressure: 197 | Child Risk: 58.1
+    DSI: 36.0 | ADP: 21.9 | Quadrant: Q3: Low Stability, Low Dependency
+
+ 7. Didwana-Kuchaman, Rajasthan
+    Severity: CRITICAL | Priority Score: 84.6 | Alerts: 3
+    Migration Pressure: 25526 | Child Risk: 22.3
+    DSI: 35.3 | ADP: 21.3 | Quadrant: Q3: Low Stability, Low Dependency
+
+ 8. Solapur, Maharashtra
+    Severity: CRITICAL | Priority Score: 83.6 | Alerts: 5
+    Migration Pressure: 1301 | Child Risk: 27.3
+    DSI: 31.7 | ADP: 59.8 | Quadrant: Q2: Low Stability, High Dependency
+
+ 9. Yavatmal, Maharashtra
+    Severity: HIGH | Priority Score: 82.2 | Alerts: 4
+    Migration Pressure: 9320 | Child Risk: 30.9
+    DSI: 13.1 | ADP: 37.0 | Quadrant: Q3: Low Stability, Low Dependency
+
+10. Phalodi, Rajasthan
+    Severity: HIGH | Priority Score: 79.7 | Alerts: 3
+    Migration Pressure: 21943 | Child Risk: 21.8
+    DSI: 41.1 | ADP: 22.5 | Quadrant: Q3: Low Stability, Low Dependency
+
+11. Nanded, Maharashtra
+    Severity: CRITICAL | Priority Score: 75.2 | Alerts: 5
+    Migration Pressure: 1906 | Child Risk: 27.9
+    DSI: 28.3 | ADP: 54.2 | Quadrant: Q2: Low Stability, High Dependency
+
+12. Ahmadnagar, Maharashtra
+    Severity: CRITICAL | Priority Score: 74.7 | Alerts: 4
+    Migration Pressure: 133 | Child Risk: 25.8
+    DSI: 41.8 | ADP: 62.7 | Quadrant: Q2: Low Stability, High Dependency
+
+13. Ahilyanagar, Maharashtra
+    Severity: HIGH | Priority Score: 69.3 | Alerts: 2
+    Migration Pressure: 9775 | Child Risk: 22.3
+    DSI: 8.3 | ADP: 10.2 | Quadrant: Q3: Low Stability, Low Dependency
+
+14. North 24 Parganas, West Bengal
+    Severity: HIGH | Priority Score: 68.3 | Alerts: 4
+    Migration Pressure: 7786 | Child Risk: 23.8
+    DSI: 57.2 | ADP: 70.0 | Quadrant: Q1: High Stability, High Dependency
+
+15. Sangli, Maharashtra
+    Severity: HIGH | Priority Score: 66.7 | Alerts: 4
+    Migration Pressure: 571 | Child Risk: 26.5
+    DSI: 35.5 | ADP: 31.1 | Quadrant: Q3: Low Stability, Low Dependency
+
+--------------------------------------------------------------------------------
+5. STATISTICAL SUMMARY
+--------------------------------------------------------------------------------
+  Mean Alerts per District    : 0.74
+  Median Alerts per District  : 1
+  Max Alerts in Single District: 5
+  Districts with 0 Alerts     : 500
+  Districts with 3+ Alerts    : 43
+  Mean Priority Score (All)   : 24.53
+  Mean Priority Score (Alerts): 31.16
+
+--------------------------------------------------------------------------------
+6. OUTPUT FILES GENERATED
+--------------------------------------------------------------------------------
+  - layer4_early_warning_alerts.csv (all districts with alert details)
+  - layer4_priority_intervention_districts.csv (CRITICAL + HIGH only)
+  - layer4_alert_frequency.csv (alert type analysis)
+  - layer4_alert_dashboard.png (4-panel visualization)
+  - layer4_summary_report.txt (this file)
+
+================================================================================
+END OF REPORT
+================================================================================

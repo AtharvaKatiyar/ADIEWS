@@ -1,0 +1,31 @@
+
+================================================================================
+BIVARIATE ANALYSIS SUMMARY - ADIEWS PROJECT
+================================================================================
+
+1. CHILD VS ADULT UPDATES CORRELATION
+   - Correlation coefficient: 0.8507
+   - Relationship: Strong positive
+   - Linear trend: y = 0.1003x + -0.01
+
+2. AGE UPDATE RATIO DISTRIBUTION
+   - Mean ratio: 0.1161
+   - Median ratio: 0.0000
+   - Std deviation: 0.2442
+   - 25th percentile: 0.0000
+   - 75th percentile: 0.1429
+
+3. DISTRICT-LEVEL INSIGHTS
+   - Total districts analyzed: 967
+   - Highest ratio district: Tiruvarur (1.0833)
+   - Lowest ratio district: 100000 (0.0000)
+   - Top district by volume: Pune (447,263 updates)
+
+4. PINCODE CONCENTRATION METRICS
+   - Total unique pincodes: 19,772
+   - Top 1% pincodes account for: 12.53% of updates
+   - Top 5% pincodes account for: 32.29% of updates
+   - Top 10% pincodes account for: 46.74% of updates
+   - Top 20 pincodes account for: 2.67% of updates
+
+================================================================================

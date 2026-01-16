@@ -1,0 +1,76 @@
+
+LAYER 2: CHILD DOCUMENTATION RISK MAP - SUMMARY REPORT
+Generated: 2026-01-15 14:42:53
+================================================================================
+
+DATASET OVERVIEW
+- Total Districts Analyzed: 1056
+- Date Range: 2025-03 to 2026-01
+
+CHILD UPDATE PATTERNS
+- Mean Child Share: 9.48%
+- Median Child Share: 8.84%
+- Low Share Districts (<20%): 1013
+- Mean Child-Adult Ratio: 0.116
+
+LAG DETECTION
+- Districts with Positive Lag: 65
+- Districts with Adult Spike: 966
+- Districts with Child Response: 949
+- Districts with Peak Mismatch: 142
+
+RISK ASSESSMENT
+- Mean Risk Score: 23.78
+- Critical Risk Districts: 0
+- High Risk Districts: 9
+- Moderate Risk Districts: 93
+- Low Risk Districts: 954
+
+RISK LEVEL DISTRIBUTION
+risk_level
+Low         954
+Moderate     93
+High          9
+
+TOP 10 HIGHEST RISK DISTRICTS:
+1. Buldana, Maharashtra: Risk=58.1, Share=0.8%, Lag=2, Pattern=High In-Migration
+2. Panch Mahals, Gujarat: Risk=55.9, Share=3.6%, Lag=2, Pattern=Seasonal Migration
+3. Bid, Maharashtra: Risk=55.3, Share=0.9%, Lag=2, Pattern=Seasonal Migration
+4. Karaikal, Pondicherry: Risk=54.4, Share=3.4%, Lag=2, Pattern=Seasonal Migration
+5. Gondia, Maharashtra: Risk=53.2, Share=1.6%, Lag=2, Pattern=Seasonal Migration
+6. Dadra & Nagar Haveli, Dadra & Nagar Haveli: Risk=51.5, Share=12.2%, Lag=3, Pattern=Seasonal Migration
+7. Washim *, Maharashtra: Risk=50.9, Share=0.5%, Lag=2, Pattern=Seasonal Migration
+8. Shahjahanpur, Uttar Pradesh: Risk=50.6, Share=7.9%, Lag=3, Pattern=High In-Migration
+9. Gondiya, Maharashtra: Risk=50.1, Share=5.8%, Lag=3, Pattern=High In-Migration
+10. South Andaman, Andaman & Nicobar Islands: Risk=49.9, Share=2.8%, Lag=2, Pattern=Seasonal Migration
+
+CORRELATION WITH MIGRATION
+Average Risk by Migration Pattern:
+- High In-Migration: 25.14
+- High Churn: 23.86
+- Seasonal Migration: 23.76
+- High Out-Migration: 23.50
+- Stable Population: 22.66
+
+================================================================================
+VISUALIZATIONS GENERATED:
+1. layer2_child_share_analysis.png - Child share & gap patterns
+2. layer2_lag_detection.png - Temporal lag analysis
+3. layer2_risk_score_analysis.png - Risk scoring & distribution
+4. layer2_high_risk_identification.png - Priority intervention zones
+
+DATA OUTPUTS:
+1. layer2_child_risk_metrics.csv - Complete metrics for all districts
+2. layer2_critical_districts.csv - Critical & high risk districts
+
+================================================================================
+POLICY IMPLICATIONS:
+- Mobile Aadhaar enrollment camps needed in high-risk districts
+- School-based documentation drives for child welfare access
+- Awareness campaigns linking child Aadhaar to education/health benefits
+- Targeted outreach to migrant families with children
+
+NEXT STEPS:
+- Cross-validate with school enrollment data
+- Integrate with PDS beneficiary data
+- Proceed to Layer 3A: Stability Index
