@@ -126,6 +126,7 @@ const UnivariateAnalysis = () => {
                 alt="Child Updates Distribution"
                 className="w-full h-auto"
                 style={{ background: '#ffffff' }}
+                loading="eager"
                 decoding="async"
               />
             </div>

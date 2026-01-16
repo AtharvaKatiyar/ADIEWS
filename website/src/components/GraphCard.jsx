@@ -3,6 +3,7 @@ import { HiChevronDown, HiChevronUp, HiLightBulb } from 'react-icons/hi';
 
 const GraphCard = ({ number, title, description, conclusion, chartComponent, children }) => {
   const [showConclusion, setShowConclusion] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <div className="rounded-lg shadow-lg overflow-hidden mb-6" style={{ background: '#1a1a1a', border: '1px solid #2a2a2a' }}>
@@ -17,7 +18,7 @@ const GraphCard = ({ number, title, description, conclusion, chartComponent, chi
 
       {/* Interactive Chart */}
       <div className="p-5" style={{ background: '#0d0d0d' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', minHeight: imageLoaded ? 'auto' : '400px' }}>
           {children || chartComponent}
         </div>
       </div>
