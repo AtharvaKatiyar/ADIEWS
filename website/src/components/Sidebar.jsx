@@ -131,6 +131,7 @@ const Sidebar = () => {
               <div className="mt-2 ml-4 space-y-1">
                 {policyLayers.map((layer) => {
                   const isActive = location.pathname === layer.path;
+                  return (
                     <Link
                       key={layer.id}
                       to={layer.path}
@@ -154,7 +155,6 @@ const Sidebar = () => {
                       >
                         {layer.badge}
                       </span>
-                    </Link>n>
                     </Link>
                   );
                 })}
@@ -162,6 +162,8 @@ const Sidebar = () => {
             </div>
           </div>
         </div>
+      </nav>
+
       <div className="absolute bottom-0 left-0 right-0 p-4" style={{ borderTop: '1px solid #2a2a2a' }}>
         <p className="text-xs text-center" style={{ color: '#6b7280' }}>
           © 2026 ADIEWS Project
@@ -173,7 +175,5 @@ const Sidebar = () => {
     </>
   );
 };
-
-export default Sidebar;
 
 export default Sidebar;
