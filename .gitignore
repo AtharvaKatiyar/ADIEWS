@@ -4,3 +4,10 @@ node_modules/
 __pycache__/
 .venv/
 .DS_Store
+
+# Raw source data (already processed into cleaned datasets)
+DemographicData/
+
+# Large intermediate files
+outputs/df_clean_daily.pkl
+outputs/df_clean_daily.csv
