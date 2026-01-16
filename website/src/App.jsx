@@ -17,7 +17,7 @@ function App() {
     <Router>
       <div className="flex min-h-screen" style={{ backgroundColor: '#0d0d0d' }}>
         <Sidebar />
-        <main className="flex-1 lg:ml-64">
+        <main className="flex-1 ml-0 lg:ml-64 w-full">
           <Routes>
             <Route path="/" element={<Navigate to="/overview" replace />} />
             <Route path="/overview" element={<Hero />} />

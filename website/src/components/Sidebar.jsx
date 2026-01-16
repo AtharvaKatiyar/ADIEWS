@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { HiChartBar, HiTrendingUp, HiCog, HiMap, HiLocationMarker, HiLightBulb, HiChevronDown, HiChevronRight } from 'react-icons/hi';
+import { HiChartBar, HiTrendingUp, HiCog, HiMap, HiLocationMarker, HiLightBulb, HiChevronDown, HiChevronRight, HiMenu, HiX } from 'react-icons/hi';
 
 const Sidebar = () => {
   const location = useLocation();
   const [isPolicyOpen, setIsPolicyOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   
   const sections = [
     { id: 'overview', name: 'Overview', icon: HiChartBar, path: '/overview' },
@@ -27,13 +28,48 @@ const Sidebar = () => {
   const isPolicyActive = policyLayers.some(layer => location.pathname === layer.path);
 
   return (
-    <aside className="fixed left-0 top-0 h-full w-64 text-white shadow-2xl z-10 overflow-y-auto" style={{ background: 'linear-gradient(to bottom, #1a1a1a, #0d0d0d)', borderRight: '1px solid #2a2a2a' }}>
-      <div className="p-6" style={{ borderBottom: '1px solid #2a2a2a' }}>
-        <h1 className="text-2xl font-bold">ADIEWS</h1>
-        <p className="text-sm mt-1" style={{ color: '#9ca3af' }}>
-          Aadhaar Demographic Intelligence
-        </p>
-      </div>
+    <>
+      {/* Mobile Menu Button */}
+      <button
+        onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+        className="fixed top-4 left-4 lg:hidden text-white p-2 rounded-lg shadow-lg transition-all duration-200"
+        style={{ 
+          background: '#1a1a1a', 
+          border: '1px solid #2a2a2a',
+          zIndex: 60
+        }}
+        onMouseEnter={(e) => e.currentTarget.style.background = '#2a2a2a'}
+        onMouseLeave={(e) => e.currentTarget.style.background = '#1a1a1a'}
+      >
+        {isSidebarOpen ? <HiX className="text-2xl" /> : <HiMenu className="text-2xl" />}
+      </button>
+
+      {/* Overlay for mobile */}
+      {isSidebarOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 lg:hidden"
+          style={{ zIndex: 40 }}
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
+
+      {/* Sidebar */}
+      <aside 
+        className={`fixed left-0 top-0 h-full w-64 text-white shadow-2xl overflow-y-auto transition-transform duration-300 ease-in-out ${
+          isSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+        } lg:translate-x-0`}
+        style={{ 
+          background: 'linear-gradient(to bottom, #1a1a1a, #0d0d0d)', 
+          borderRight: '1px solid #2a2a2a',
+          zIndex: 50
+        }}
+      >
+        <div className="p-6" style={{ borderBottom: '1px solid #2a2a2a' }}>
+          <h1 className="text-2xl font-bold">ADIEWS</h1>
+          <p className="text-sm mt-1" style={{ color: '#9ca3af' }}>
+            Aadhaar Demographic Intelligence
+          </p>
+        </div>
 
       <nav className="p-4">
         <div className="space-y-2">
@@ -44,6 +80,7 @@ const Sidebar = () => {
               <Link
                 key={section.id}
                 to={section.path}
+                onClick={() => setIsSidebarOpen(false)}
                 className="w-full text-left px-4 py-3 rounded-lg transition-all duration-200 flex items-center gap-3 block"
                 style={{
                   background: isActive ? '#2a2a2a' : 'transparent',
@@ -94,10 +131,10 @@ const Sidebar = () => {
               <div className="mt-2 ml-4 space-y-1">
                 {policyLayers.map((layer) => {
                   const isActive = location.pathname === layer.path;
-                  return (
                     <Link
                       key={layer.id}
                       to={layer.path}
+                      onClick={() => setIsSidebarOpen(false)}
                       className="w-full text-left px-4 py-2.5 rounded-lg transition-all duration-200 flex items-center justify-between block"
                       style={{
                         background: isActive ? 'linear-gradient(90deg, #7c3aed 0%, #c026d3 100%)' : 'transparent',
@@ -117,6 +154,7 @@ const Sidebar = () => {
                       >
                         {layer.badge}
                       </span>
+                    </Link>n>
                     </Link>
                   );
                 })}
@@ -124,8 +162,6 @@ const Sidebar = () => {
             </div>
           </div>
         </div>
-      </nav>
-
       <div className="absolute bottom-0 left-0 right-0 p-4" style={{ borderTop: '1px solid #2a2a2a' }}>
         <p className="text-xs text-center" style={{ color: '#6b7280' }}>
           © 2026 ADIEWS Project
@@ -133,8 +169,11 @@ const Sidebar = () => {
           Last Updated: {new Date().toLocaleDateString()}
         </p>
       </div>
-    </aside>
+      </aside>
+    </>
   );
 };
+
+export default Sidebar;
 
 export default Sidebar;
